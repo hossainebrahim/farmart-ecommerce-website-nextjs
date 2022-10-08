@@ -1,5 +1,13 @@
+import ProductDetails from "../../app/components/Product/ProductDetails";
+import ProductMoreInfo from "../../app/components/Product/ProductMoreInfo";
+
 const Products = () => {
-  return <div>Products</div>;
+  return (
+    <>
+      <ProductDetails />
+      <ProductMoreInfo />
+    </>
+  );
 };
 
 export default Products;
