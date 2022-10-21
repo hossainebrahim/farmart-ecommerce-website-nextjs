@@ -1,5 +1,8 @@
+import React from "react";
+import DashboardLayout from "../../app/layout/DashboardLayout";
+
 const Addresses = () => {
-  return <div>Addresses</div>;
+  return <DashboardLayout>Addresses</DashboardLayout>;
 };
 
 export default Addresses;

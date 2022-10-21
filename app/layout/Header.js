@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
+import { useSelector } from "react-redux";
 import Search from "../components/Search";
+import { selectTotalCartItems } from "../redux/slices/basketSlice";
 
 const Header = () => {
+  const cartItems = useSelector(selectTotalCartItems);
+
   return (
     <header className="bg-white py-7 border-b">
       <div className="container">
@@ -39,7 +43,7 @@ const Header = () => {
                 <div className="relative">
                   <AiOutlineShoppingCart className="text-3xl text-title" />
                   <span className="bg-primary rounded text-center absolute px-2 text-sm -right-3 -top-2 font-semibold">
-                    0
+                    {cartItems || 0}
                   </span>
                 </div>
                 <div className="hidden lg:block">

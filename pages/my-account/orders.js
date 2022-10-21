@@ -1,5 +1,8 @@
+import React from "react";
+import DashboardLayout from "../../app/layout/DashboardLayout";
+
 const Orders = () => {
-  return <div>Orders</div>;
+  return <DashboardLayout>Orders</DashboardLayout>;
 };
 
 export default Orders;
